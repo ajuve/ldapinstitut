@@ -2,6 +2,12 @@
 
 domini=ncognom.local
 
+instalar_ldap(){
+  apt update
+  apt install ldap-utils slapd -y
+  dpkg-reconfigure slapd
+}
+
 crear_unitats(){
   echo "Crear la unitat organitzativa alumnes"
   echo "Crear la untiat organitzativa professors"
