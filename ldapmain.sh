@@ -26,13 +26,13 @@ while((op!=0));do
 
   if((op==1));then
     instalar_ldap
-  elif((op==1));then
-    crear_unitats
   elif((op==2));then
-    afegir_usuari
+    crear_unitats
   elif((op==3));then
-    eliminar_usuari
+    afegir_usuari
   elif((op==4));then
+    eliminar_usuari
+  elif((op==5));then
     importar_usuaris
   elif((op==9));then
     menu
